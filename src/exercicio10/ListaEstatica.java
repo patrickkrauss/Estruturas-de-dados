@@ -34,6 +34,4 @@ public class ListaEstatica<T> extends ListaAbstract<T>{
         return -1;
     }
     
-    
-    
 }
