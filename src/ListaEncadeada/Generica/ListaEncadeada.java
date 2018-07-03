@@ -26,7 +26,7 @@ public class ListaEncadeada<T> {
         return primeiro == null;
     }
 
-    public NoLista buscar(T value) {  //pq esse metodo falha se o equals nao esta sobreescrito no NoLista
+    public NoLista buscar(T value) {
         NoLista current = primeiro;
         while (current != null) {
             if (current.getInfo() == value)
@@ -93,7 +93,7 @@ public class ListaEncadeada<T> {
         return values.toString();
     }
 
-    public void liberar() {                   // pode estar errado
+    public void liberar() {
         if (primeiro == null)
             return;
         NoLista<T> preview = null;

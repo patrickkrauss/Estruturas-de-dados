@@ -3,7 +3,7 @@ package exercicio10;
 public class ListaOrdenada<T extends Comparable<T>> extends ListaAbstract<T> {
 
     @Override
-    public void inserir(T value) {
+    public void inserir(T value) {                //todo
         Object[] info = getInfo();
         if (getTamanho() == info.length) {
             redimensionar();

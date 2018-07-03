@@ -38,19 +38,6 @@ class ArvoreN_AriaTest {
 
         no1 = new NoArvore<>(1, no4, no3, no2);
         arvore = new Arvore<>();
-        /*no5 = new NoArvore<>(5);
-        no6 = new NoArvore<>(6);
-        no7 = new NoArvore<>(7);
-        no2 = new NoArvore<>(2, no5, no6, no7);
-        no8 = new NoArvore<>(8);
-        no3 = new NoArvore<>(3, no8);
-
-        no9 = new NoArvore<>(9);
-        no10 = new NoArvore<>(10);
-        no4 = new NoArvore<>(4, no9, no10);
-
-        no1 = new NoArvore<>(1, no2, no3, no4);
-        arvore = new Arvore<>();*/
     }
 
     @Test
@@ -75,11 +62,11 @@ class ArvoreN_AriaTest {
     @Test
     void testeBuscarTrue() {
         inserirValoresParaTeste();
-        assertEquals(new Integer(2),arvore.buscar(2).getInfo());
-        assertEquals(new Integer(5),arvore.buscar(5).getInfo());
-        assertEquals(new Integer(3),arvore.buscar(3).getInfo());
-        assertEquals(new Integer(8),arvore.buscar(8).getInfo());
-        assertEquals(new Integer(10),arvore.buscar(10).getInfo());
+        assertEquals(new Integer(2), arvore.buscar(2).getInfo());
+        assertEquals(new Integer(5), arvore.buscar(5).getInfo());
+        assertEquals(new Integer(3), arvore.buscar(3).getInfo());
+        assertEquals(new Integer(8), arvore.buscar(8).getInfo());
+        assertEquals(new Integer(10), arvore.buscar(10).getInfo());
     }
 
     @Test

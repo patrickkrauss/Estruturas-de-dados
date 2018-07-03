@@ -54,7 +54,7 @@ public abstract class ListaAbstract<T> {
 
     public abstract void inserir(T value);
 
-    public void retirar(T value) {
+    public void retirar(T value) {                 //todo
         for (int i = 0; i < tamanho; i++) {
             if (info[i].equals(value)) {
                 tamanho--;
@@ -74,6 +74,7 @@ public abstract class ListaAbstract<T> {
     }
 
     public abstract int buscar(T value);
+
     public T obterElemento(int posicao) {
         if (posicao < 0 || posicao > info.length - 1) {
             throw new IndexOutOfBoundsException("Pocisao invalida");
@@ -90,7 +91,7 @@ public abstract class ListaAbstract<T> {
         if (tamanho == 0)
             return "";
 
-        StringBuilder result = new StringBuilder(info.length * 2); //guarantee that string will not resize
+        StringBuilder result = new StringBuilder(info.length * 2); // assure that string will not resize
         for (int i = 0; i < tamanho; i++) {
             result.append(info[i]).append(",");
         }

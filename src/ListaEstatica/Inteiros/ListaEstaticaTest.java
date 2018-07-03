@@ -67,12 +67,12 @@ class ListaEstaticaTest {
         list.inserir(9);
         list.inserir(10);
         list.retirar(2);
-        /*try{
+        try{
             list.retirar(-10);
         }catch (Exception e){
             return;
         }
-        fail("Should have throw an exception");*/
+        fail("Should have throw an exception");
     }
 
     @Test

@@ -31,7 +31,7 @@ public class ListaDuplamenteEncadeada<T> {
             return false;
     }
 
-    public NoListaDupla buscar(T value) {  //pq esse metodo falha se o equals nao esta sobreescrito no NoLista
+    public NoListaDupla buscar(T value) {
         NoListaDupla current = primeiro;
         while (current != null) {
             if (current.getInfo() == value)
@@ -113,7 +113,7 @@ public class ListaDuplamenteEncadeada<T> {
         return result.toString();
     }
 
-    public void liberar() {                   // pode estar errado
+    public void liberar() {
         if (primeiro == null)
             return;
         NoListaDupla<T> preview = null;
@@ -127,6 +127,4 @@ public class ListaDuplamenteEncadeada<T> {
         }
         primeiro = null;
     }
-
-
 }
