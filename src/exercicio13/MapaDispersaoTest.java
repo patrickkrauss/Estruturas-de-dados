@@ -1,21 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package exercicio13;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+//import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-/**
- *
- * @author leoro
- */
+//import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class MapaDispersaoTest {
-    
-    public MapaDispersaoTest() {
-    }
 
     @Test
     public void testInserir() {

@@ -1,20 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package exercicio11;
 
-/**
- *
- * @author leoro
- * @param <T>
- */
 public class ArvoreBinaria<T extends Comparable<T>> extends ArvoreBinariaAbstract<T> {
 
     @Override
     public void setRaiz(NoArvoreBinaria<T> raiz) {
-        super.setRaiz(raiz); //To change body of generated methods, choose Tools | Templates.
+        super.setRaiz(raiz);
     }
 
     @Override
@@ -139,6 +129,5 @@ public class ArvoreBinaria<T extends Comparable<T>> extends ArvoreBinariaAbstrac
             sucessor.setDireita(excluir.getDireita());
         }
         return sucessor;
-
     }
 }

@@ -15,18 +15,18 @@ public abstract class ArvoreBinariaAbstract<T> {
     public NoArvoreBinaria<T> getRaiz() {
         return raiz;
     }
-    
 
     public boolean estaVazia() {
         return raiz == null;
     }
+
     public boolean pertence(T info) {
         return (buscar(raiz, info) != null);
     }
 
     public abstract NoArvoreBinaria<T> buscar(T info); //{
     //    return (buscar(raiz, info));
-  //  }
+    //  }
 
     private NoArvoreBinaria<T> buscar(NoArvoreBinaria<T> no, T info) {
         if (no == null || no.getInfo().equals(info))
